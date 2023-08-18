@@ -96,8 +96,4 @@ def readbin() :
         except EOFError:
             break
     f.close()
-            print(d)
-        except EOFError:
-            break
-    f.close()
-  
+            
