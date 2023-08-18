@@ -30,3 +30,17 @@ def txt() :
     print("data you have filled recently : ")
     print( l)
     f.close()
+def writrecsv() :
+    f=open("rrr.csv","a",newline="")
+    w=csv.writer(f) 
+    while True :
+        n=input("enter name :")
+        r=int(input("enter roll no. "))
+        m=int(input("enter marks :"))
+        l=[n,r,m]
+        w.writerow(l)
+        n=input("enter yes or no :")
+        if n=="yes" :
+            break
+    f.close()
+        
