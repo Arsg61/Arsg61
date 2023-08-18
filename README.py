@@ -43,4 +43,11 @@ def writrecsv() :
         if n=="yes" :
             break
     f.close()
-        
+def addcsv()
+
+
+
+
+
+
+
