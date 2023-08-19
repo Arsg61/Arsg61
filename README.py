@@ -96,4 +96,55 @@ def readbin() :
         except EOFError:
             break
     f.close()
-            
+while True :
+        print('''1.TXT FILE\n2.BINARY FILE\n3.CSV FILE\n4.OUEIT''')
+        c=int(input("ENTER (1/2/3/4) :"))
+        while True :
+            if c==1 :
+                print('''1.WRITE\n2.READ\n3.ADD\n4.QUIET''')
+                b=int(input("enter (1/2/3/4)"))
+                if b==1 :
+                    writetxt()
+                    continue
+                elif b==2 :
+                    readtxt()
+                    continue
+                elif b==3 :
+                    addtxt()
+                    continue
+                else :
+                    pass
+            if c==2 :
+                print('''1.WRITE\n2.READ\n3.ADD\n4.QUIET''')
+                b=int(input("enter (1/2/3/4)"))
+                if b==1 :
+                        writebin()
+                        continue
+                elif b==2 :
+                        readbin()
+                        continue
+                elif b==3 :
+                        addbin()
+                        continue
+                else :
+                        pass
+            if c==3 :
+                print('''1.WRITE\n2.READ\n3.ADD\n4.QUIET''')
+                b=int(input("enter (1/2/3/4)"))
+                if b==1 :
+                    writecsv()
+                    continue
+                elif b==2 :
+                    readcsv()
+                    continue
+                elif b==3 :
+                    addcsv()
+                    continue
+                else :
+                    pass
+            else :
+                break
+        else :
+            break
+        
+
